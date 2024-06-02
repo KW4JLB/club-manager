@@ -2,7 +2,6 @@
 name: Issue report
 description: Create a report to help us improve
 title: '[ISSUE]: '
-labels: ''
 assignees: ['@jared-bloomer']
 body:
   - type: dropdown
