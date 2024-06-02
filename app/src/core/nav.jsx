@@ -200,6 +200,12 @@ class Nav extends React.Component {
 
             <a
               className="navbar-item"
+              onClick={() => this.navigate(ROUTES.MEMBERS)}>
+              Members
+            </a>
+
+            <a
+              className="navbar-item"
               onClick={() => this.navigate(ROUTES.ABOUT)}>
               About
             </a>

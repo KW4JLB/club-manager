@@ -7,6 +7,9 @@ import loadable from "@loadable/component";
 const Welcome = loadable(() =>
   import(/* webpackChunkName: "WelcomeChunk" */ "Pages/welcome/welcome")
 );
+const Members = loadable(() =>
+  import(/* webpackChunkName: "AboutChunk" */ "Pages/members/members")
+);
 const About = loadable(() =>
   import(/* webpackChunkName: "AboutChunk" */ "Pages/about/about")
 );
@@ -33,6 +36,7 @@ class AppRoutes extends React.Component {
     return (
       <Routes>
         <Route path={ROUTES.WELCOME} element={<Welcome />}></Route>
+        <Route path={ROUTES.MEMBERS} element={<Members />}></Route>
         <Route path={ROUTES.ABOUT} element={<About />}></Route>
         <Route path={ROUTES.MOTD} element={<Motd />}></Route>
         <Route path={ROUTES.LOCALIZATION} element={<Localization />}></Route>
