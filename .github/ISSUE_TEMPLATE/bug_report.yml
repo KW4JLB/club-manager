@@ -7,7 +7,6 @@ assignees: ['@jared-bloomer']
 body:
   - type: markdown
     attributes:
-      label: What is going on?
       value: |
         Please have a MVP (minimal viable product/example) that can reproduce the bug consistently. If you do not have a MVP, the issue will not get as much attention to fixing.
 
