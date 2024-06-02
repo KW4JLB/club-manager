@@ -14,6 +14,7 @@ body:
   - type: dropdown
     id: os
     attributes:
+      label: Which Operating system are you using?
       description: Which Operating system are you using? Windows? Linux? OS X?
       multiple: true
       options:
@@ -25,6 +26,7 @@ body:
   - type: dropdown
     id: version
     attributes:
+      label: Which Version of this application are you using?
       description: Which Version (Github Release) of this application are you using?
       multiple: false
       options:
