@@ -1,6 +1,6 @@
 ---
 name: Issue report
-description: Create a report to help us improve
+description: Report Generic Issues to help us improve
 title: '[ISSUE]: '
 assignees: ['@jared-bloomer']
 body:
