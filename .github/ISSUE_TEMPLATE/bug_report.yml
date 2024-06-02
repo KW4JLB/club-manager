@@ -31,3 +31,17 @@ body:
       multiple: false
       options:
         - 1.0.x
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description of the Bug
+      description: Tell us what this bug is about
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: How do we reproduce the Bug
+      description: How can we replicate and confirm this issue?
+    validations:
+      required: true
