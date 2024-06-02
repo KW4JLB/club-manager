@@ -1,0 +1,33 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: '[BUG]: '
+labels: '["bug"]'
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please have a MVP (minimal viable product/example) that can reproduce the bug consistently. If you do not have a MVP, the issue will not get as much attention to fixing.
+
+        Thank you for taking the time to help make this project better.
+  - type: dropdown
+    id: os
+    attributes:
+      label: Which Operating System Are You Using?
+      description: Which Operating system are you using? Windows? Linux? OS X?
+      multiple: true
+      options:
+       - Windows 10
+       - Windows 11
+       - Linux (Debian Based)
+       - Linux (Redhat Based)
+       - OS X (Please include version in description)
+  - type: dropdown
+    id: version
+    attributes:
+      labels: Which Version of this application are you using?
+      description: Which Version (Github Release) of this application are you using?
+      multiple: false
+      options:
+        - 1.0.x
