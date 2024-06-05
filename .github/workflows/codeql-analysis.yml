@@ -6,6 +6,7 @@
 name: "CodeQL"
 
 on:
+  sworkflow_dispatch:
   push:
     branches: [master]
   pull_request:
