@@ -40,7 +40,8 @@ async function createWindow() {
   if (!isDev) {
     // Needs to happen before creating/loading the browser window;
     // protocol is only used in prod
-    protocol.registerBufferProtocol(Protocol.scheme, Protocol.requestHandler); /* eng-disable PROTOCOL_HANDLER_JS_CHECK */
+    //protocol.registerBufferProtocol(Protocol.scheme, Protocol.requestHandler); /* eng-disable PROTOCOL_HANDLER_JS_CHECK */
+    protocol.handle(Protocol.scheme, Protocol.requestHandler); /* eng-disable PROTOCOL_HANDLER_JS_CHECK */
   }
 
   const store = new Store({
@@ -60,7 +61,7 @@ async function createWindow() {
     title: "Application is currently initializing...",
     webPreferences: {
       devTools: isDev,
-      nodeIntegration: false,
+      nodeIntegration: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
       contextIsolation: true,
